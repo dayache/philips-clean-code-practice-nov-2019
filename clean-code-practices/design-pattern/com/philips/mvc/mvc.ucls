@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.3" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.philips.mvc.View" project="clean-code-practices" 
+    file="/clean-code-practices/design-pattern/com/philips/mvc/View.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="83" width="97" x="394" y="60"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.philips.mvc.App" project="clean-code-practices" 
+    file="/clean-code-practices/design-pattern/com/philips/mvc/App.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="119" width="141" x="144" y="60"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.philips.mvc.Controller" project="clean-code-practices" 
+    file="/clean-code-practices/design-pattern/com/philips/mvc/Controller.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="101" width="160" x="624" y="60"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.philips.mvc.DashedView" project="clean-code-practices" 
+    file="/clean-code-practices/design-pattern/com/philips/mvc/View.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="101" width="136" x="824" y="60"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.philips.mvc.StarView" project="clean-code-practices" 
+    file="/clean-code-practices/design-pattern/com/philips/mvc/View.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="101" width="136" x="251" y="219"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.philips.mvc.Student" project="clean-code-practices" 
+    file="/clean-code-practices/design-pattern/com/philips/mvc/Student.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="655" y="488"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.philips.mvc.DashView" project="clean-code-practices" 
+    file="/clean-code-practices/design-pattern/com/philips/mvc/View.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="101" width="136" x="427" y="219"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="8" language="java" name="com.philips.mvc.IView" project="clean-code-practices" 
+    file="/clean-code-practices/design-pattern/com/philips/mvc/View.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="83" width="136" x="824" y="219"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <generalization id="9">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <association id="10">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="11" name="model"/>      
+      <multiplicity id="12" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="13">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <realization id="14">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </realization>  
+  <realization id="15">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="8"/>  
+  </realization>  
+  <association id="16">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="17" name="view"/>      
+      <multiplicity id="18" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
