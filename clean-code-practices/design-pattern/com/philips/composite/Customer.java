@@ -14,7 +14,7 @@ public class Customer {
 		super();
 		this.customerId = customerId;
 		this.customerName = customerName;
-		refferal = new ArrayList<Customer>(); 
+		refferal = new ArrayList<>(); 
 	}
 	
 	
