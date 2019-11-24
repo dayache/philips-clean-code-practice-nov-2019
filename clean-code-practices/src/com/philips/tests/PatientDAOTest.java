@@ -69,6 +69,10 @@ public class PatientDAOTest {
 	}
 	
 	
+	@Test
+	public void getPatientTest() {
+		assertNull(patientDao.getPatient(101));
+	}
 	
 	
 	
