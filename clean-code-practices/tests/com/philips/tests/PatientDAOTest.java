@@ -74,10 +74,6 @@ public class PatientDAOTest {
 		assertNull(patientDao.getPatient(101));
 	}
 	
-	
-	
-	
-	// TODO 
 	@Test
 	public void getPatientWithIdTest() {
 		boolean expected = true;
