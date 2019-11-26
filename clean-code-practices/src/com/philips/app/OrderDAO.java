@@ -112,18 +112,7 @@ public class OrderDAO {
 		} catch (SQLException e) {
 			e.printStackTrace();
 			logger.debug("in insertOrderDetail ", e);
-		} finally {
-			try {
-				// if(gc.rs1!=null)gc.rs1.close();
-				if (gc.ps1 != null)
-					gc.ps1.close();
-
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
-
-			GetConnection.closeConnection();
-		}
+		} 
 		return false;
 	}
 
@@ -165,18 +154,7 @@ public class OrderDAO {
 		} catch (SQLException e) {
 			e.printStackTrace();
 			logger.debug("in insertOrderDetail ", e);
-		} finally {
-			try {
-				// if(gc.rs1!=null)gc.rs1.close();
-				if (gc.ps1 != null)
-					gc.ps1.close();
-
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
-
-			GetConnection.closeConnection();
-		}
+		} 
 		return false;
 	}
 
