@@ -17,13 +17,15 @@ public class PatientDAO implements IPatientDAO {
 
 	@Override
 	public void storePatientDetails(Patient patient) {
-		ObjectOutputStream oos = null;
-		FileOutputStream fos = null;
-		File file = null;
-		try {
-			file = new File("patient.ser");
-			fos = new FileOutputStream(file);
-			oos = new ObjectOutputStream(fos);
+		
+		File file = new File("patient.ser");
+		try (
+				FileOutputStream fos =  new FileOutputStream(file);
+				ObjectOutputStream oos = new ObjectOutputStream(fos); 
+			) 
+		
+		
+		{
 
 			oos.writeObject(patient);
 
@@ -32,14 +34,7 @@ public class PatientDAO implements IPatientDAO {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		} finally {
-			try {
-				oos.close();
-				fos.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
+		} 
 
 	}
 
